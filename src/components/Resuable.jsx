@@ -6,13 +6,13 @@ const Resuable = (props) => {
     >
       <img
         src={props.img}
-        className="absolute top-20 left-10 h-[200px] transition-all duration-500 peer-checked:opacity-0 "
-        alt="Image 1"
+        className={`absolute top-[110px] -left-23 bottom-0 h-[280px] ${props.ani} `}
       />
+
       <img
         src={props.card}
-        className="absolute top-20 left-10 h-[200px] opacity-0 transition-all duration-500 peer-checked:opacity-100"
-        alt="Image 2"
+        alt="Popup"
+        className="absolute top-[110px] left-[30px] h-[280px] opacity-0 transition-all duration-500 peer-checked:opacity-100"
       />
 
       <div className="ml-[180px] mt-7">

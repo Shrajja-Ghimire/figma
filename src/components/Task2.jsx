@@ -5,8 +5,6 @@ import Group3 from "../assets/Group3.png";
 import Group2 from "../assets/Group2.png";
 import Group4 from "../assets/Group4.png";
 import Reusable2 from "./Reusable2";
-import Card1 from "../assets/card1.png";
-import Card2 from "../assets/card2.png";
 
 const Task2 = () => {
   return (
@@ -24,7 +22,6 @@ const Task2 = () => {
           <div className="">
             <Resuable
               img={Group1}
-              card={Card1}
               title=" Start with Clarity"
               name=" Step into a better learning path."
               description="Overwhelmed by too many learning options? SkillShikshya provides a
@@ -38,7 +35,6 @@ const Task2 = () => {
           <div>
             <Reusable2
               img={Group2}
-              card={Card2}
               title="Learn by Doing"
               name="Practical skills, real projects."
               description="Theory is great, but action is better. At SkillShikshya, you learn by doing. Hands-on projects and real-world scenarios help you build, break, and create—leading to true mastery."
