@@ -1,0 +1,72 @@
+@import "tailwindcss";
+/* @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100;300;400;500;600;700;800;900&display=swap'); */
+@import "tailwindcss/utilities";
+@layer utilities {
+  /* bounce img */
+  @keyframes bounce-slow {
+    0%,
+    100% {
+      transform: translateY(-5%);
+      animation-timing-function: ease-in-out;
+    }
+    50% {
+      transform: translateY(0);
+      animation-timing-function: ease-in-out;
+    }
+  }
+  .animate-bounce-slow {
+    animation: bounce-slow 5s infinite;
+  }
+  /* spin medal */
+  @keyframes custom-spin {
+    0% {
+      transform: rotateY(0deg);
+      transform-style: preserve-3d;
+    }
+    50% {
+      transform: rotateY(180deg);
+      transform-style: preserve-3d;
+    }
+
+    100% {
+      transform: rotateY(0deg);
+      transform-style: preserve-3d;
+    }
+  }
+  .animate-spin-delay {
+    animation: custom-spin 4s ease-in-out infinite;
+  }
+  /* move to left */
+  @keyframes moveRight {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(5px);
+    }
+  }
+  @keyframes pulse-slide-left {
+    0% {
+      transform: translateX(0);
+    }
+    20% {
+      transform: translateX(-10px);
+    }
+    40% {
+      transform: translateX(-20px);
+    }
+    60% {
+      transform: translateX(-30px);
+    }
+    80% {
+      transform: translateX(-40px);
+    }
+    100% {
+      transform: translateX(-50px);
+    }
+  }
+
+  .hover\\:animate-pulse-slide-left:hover {
+    animation: pulse-slide-left 0.6s ease-in-out forwards;
+  }
+}
