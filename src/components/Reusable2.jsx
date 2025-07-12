@@ -8,7 +8,7 @@ const Reusable2 = (props) => {
       >
         <img
           src={props.img}
-          className={`${props.ani} absolute top-[150px] -right-2 bottom-0 h-[280px]`}
+          className={`absolute top-[150px] -right-2 bottom-0 h-[280px] ${props.ani}`}
         />
 
         <div className="mr-[150px] ml-8">
